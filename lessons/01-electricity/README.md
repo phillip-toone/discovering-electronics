@@ -130,6 +130,8 @@ Set it to measure **DC voltage**.
 
 With the circuit complete and the lamp illuminated, measure the voltage **across the lamp**.
 
+![A voltmeter connected across the lamp in a simple 12 V circuit](figures/measure-voltage.svg)
+
 Record your measurement:
 
 **Lamp voltage, circuit closed: __________ V**
@@ -188,7 +190,7 @@ Configure the meter for **DC current measurement**.
 
 This time, instead of touching the probes across two points, you'll need to **open the circuit and insert the meter into the path**.
 
-![The circuit with an ammeter inserted into the current path](figures/first-current-measurement.svg)
+![The circuit with an ammeter inserted into the current path](figures/measure-current.svg)
 
 Reconnect the circuit through the meter so that the meter becomes part of the complete path.
 
