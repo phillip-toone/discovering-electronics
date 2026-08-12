@@ -1,0 +1,16 @@
+# LaTeX intermediate/build files
+*.aux
+*.log
+*.dvi
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# Generated PDF schematics
+*.pdf
+
+# Keep SVG files.
+# These are generated from CircuitikZ source but committed so
+# GitHub can display them directly in Markdown.
