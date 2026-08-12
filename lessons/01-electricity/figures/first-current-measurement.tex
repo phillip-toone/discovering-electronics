@@ -1,0 +1,22 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}
+
+\draw
+    (0,0)
+    to[battery1, l=$V_{\mathrm{DC}}$] (0,2)
+    -- (1,2)
+    to[ammeter, l=$A_1$] (2,2)
+    -- (3,2)
+    to[lamp, l=$LP_1$] (3,0)
+    -- (0,0);
+
+\node[left] at (0,2) {$+$};
+\node[left] at (0,0) {$-$};
+
+\end{circuitikz}
+
+\end{document}
