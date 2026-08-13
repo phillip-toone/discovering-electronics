@@ -1,0 +1,28 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}
+
+% Main circuit
+\draw
+    (0,0)
+    to[battery1, l=$V_{\mathrm{DC}}$] (0,2)
+    -- (2,2)
+    to[lamp, l=$LP_1$] (2,0)
+    -- (0,0);
+
+% Voltmeter connected across the lamp
+\draw
+    (0,2)
+    -- (0,3)
+    to[voltmeter] (2,3)
+    -- (2,2);
+
+\node[left] at (0,2) {$+$};
+\node[left] at (0,0) {$-$};
+
+\end{circuitikz}
+
+\end{document}

@@ -6,7 +6,7 @@ It starts your car, lights your home, runs your refrigerator, charges your phone
 
 We use electricity constantly, but what exactly is it?
 
-We could start with electrons, atoms, electric fields, voltage, current, resistance, etc, and we will eventually explore all of those things but first, **let's make something happen.**
+We could start with electrons, atoms, electric fields, voltage, current, resistance, and more. We'll eventually explore all of those things. But first, **let's make something happen.**
 
 ---
 
@@ -122,7 +122,7 @@ That's an important distinction, and we're going to investigate it rather than j
 
 ---
 
-## Let's Measure It
+## Let's Measure It (Voltage)
 
 Get your digital multimeter.
 
@@ -148,11 +148,15 @@ Now let's try something different.
 
 Leave the circuit open. Touch one meter probe to each side of the connection you just broke.
 
+![A voltmeter connected across a break in an open circuit](figures/measure-voltage-open.svg)
+
 In other words, use the voltmeter to bridge the gap without actually reconnecting the wire.
 
 **Voltage across the open connection: __________ V**
 
 Now restore the connection and measure across those same two points again.
+
+![A voltmeter connected across the restored connection in a closed circuit](figures/measure-voltage-close.svg)
 
 **Voltage across the closed connection: __________ V**
 
@@ -184,7 +188,7 @@ Now we're going to measure something differently.
 >
 > Measuring current is different from measuring voltage. Connecting a meter configured to measure current directly across the power supply can create a short circuit.
 >
-> Follow the meter instructions provided with your meter course before continuing.
+> Follow the instructions provided with your meter before continuing.
 
 Configure the meter for **DC current measurement**.
 
@@ -217,6 +221,71 @@ You have already observed two of its most important properties.
 A voltage can exist **across** two points.
 
 A current can flow **through** a complete path.
+
+---
+
+## How Much Power?
+
+You've now measured two things while the lamp is operating:
+
+* the **voltage across the lamp**, measured in volts
+* the **current through the lamp**, measured in amperes
+
+Those two measurements can tell us something else about the lamp: how much electrical **power** it is using.
+
+Power is measured in **watts**, represented by the letter **W**.
+
+To find the power, multiply the voltage across the lamp by the current flowing through it:
+
+**Power = Voltage × Current**
+
+or, using the symbols commonly used for these quantities:
+
+**P = V × I**
+
+where:
+
+* **P** is power, measured in watts (**W**)
+* **V** is voltage, measured in volts (**V**)
+* **I** is current, measured in amperes (**A**)
+
+Use the voltage and current you measured earlier.
+
+**Measured lamp voltage: __________ V**
+
+**Measured lamp current: __________ A**
+
+Now multiply them:
+
+**__________ V × __________ A = __________ W**
+
+That's the approximate electrical power being used by your lamp.
+
+There's also a useful relationship hidden in the units:
+
+> **1 volt × 1 ampere = 1 watt**
+
+You don't need to worry about memorizing the equation right now. There's another way to picture the relationship that you are likely already familiar with.
+
+### Another Way to Picture Power
+
+There's another way to picture this relationship.
+
+You may already be familiar with finding the area of a rectangle. Multiply its width by its height.
+
+Electrical power works similarly. If we let one side represent voltage and the other represent current, the area of the rectangle can represent their product—power.
+
+![A rectangle illustrating power as the product of voltage and current, with voltage represented by its width and current by its height](figures/power-as-area.svg)
+
+*Visualizing electrical power as the product of voltage and current.*
+
+The rectangle is only a visual model—electrical power isn't literally an area. But it gives us a useful way to think about the relationship.
+
+Increase the voltage while keeping the current the same, and the rectangle gets wider. Its area increases, so the power increases.
+
+Increase the current while keeping the voltage the same, and the rectangle gets taller. Again, its area increases, so the power increases.
+
+Instead of worrying about memorizing the equation, remember the rectangle. Voltage and current are the two quantities we multiply, and together they determine power. What's more, you just used measurements you made yourself to calculate something new.
 
 ---
 
@@ -256,7 +325,7 @@ That's how we're going to learn electronics.
 
 ## What Did We Discover?
 
-Without using any equations, you've already encountered several of the most important ideas in electricity:
+You've already encountered several of the most important ideas in electricity—and you discovered most of them by building and measuring a real circuit:
 
 * A **circuit** provides a complete electrical path.
 * A **closed circuit** has a complete path.
@@ -268,10 +337,14 @@ Without using any equations, you've already encountered several of the most impo
 * We measure voltage **across** two points.
 * We measure current **through** a circuit.
 * Breaking the circuit anywhere in its path stops current through the lamp.
+* **Power** tells us how much electrical power the lamp is using.
+* Power is measured in **watts (W)**.
+* Voltage and current together determine power: **P = V × I**.
+* **1 volt × 1 ampere = 1 watt.**
 
 Most importantly, you didn't have to take our word for any of this.
 
-**You built it. You broke it. You measured it. You saw what happened.**
+**You built it. You broke it. You measured it. You calculated it. You saw what happened.**
 
 There's just one problem.
 
