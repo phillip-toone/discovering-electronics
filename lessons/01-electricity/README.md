@@ -18,6 +18,16 @@ For this experiment you will need:
 * a 12 V lamp
 * wire
 
+> **Why 12 volts?**
+>
+> We're using 12 V throughout these early experiments partly because **12 V is a common nominal voltage in automotive electrical systems**. That gives us access to inexpensive, familiar components such as lamps, switches, relays, and motors.
+>
+> **Nominal** is an important word here. A "12 V" automotive system isn't always at exactly 12 volts. A fully charged 12 V lead-acid battery at rest will typically measure around **12.6 to 12.8 V**. With the engine running and the charging system operating, you might measure roughly **13.5 to 14.7 V**. The exact voltage depends on the vehicle and its operating conditions.
+>
+> So when we call something a **12 V system**, think of 12 V as its name or nominal operating voltage rather than an exact measurement you should always expect to see.
+>
+> Don't worry if you're not interested in cars. The electrical principles we'll discover apply just as well to electronics that operate at other voltages. We'll encounter plenty of those as we continue.
+
 Connect the components as shown in the schematic below.
 
 ![A 12 V power supply and lamp connected in a simple circuit](figures/lamp.svg)
@@ -287,8 +297,6 @@ Increase the current while keeping the voltage the same, and the rectangle gets 
 
 Instead of worrying about memorizing the equation, remember the rectangle. Voltage and current are the two quantities we multiply, and together they determine power. What's more, you just used measurements you made yourself to calculate something new.
 
----
-
 ### Watts and Horsepower
 
 You may already be familiar with another unit of power: **horsepower**.
@@ -325,7 +333,7 @@ Later, when we start experimenting with electric motors, we'll come back to this
 
 ## One Last Experiment
 
-Before moving on, play with the circuit.
+Before moving on, feel free to play with the circuit if you would like.
 
 Remove the current meter and reconnect the circuit normally.
 
@@ -353,7 +361,7 @@ Don't worry about getting the "right" answer.
 
 **See what happens.**
 
-That's how we're going to learn electronics.
+That's how we're going to learn electronics in this course.
 
 ---
 
