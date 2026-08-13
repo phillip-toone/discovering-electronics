@@ -276,6 +276,15 @@ The goal is not to make electronics seem trivial.
 
 The goal is to make it **discoverable**.
 
+### Horizontal Rules
+
+Use Markdown horizontal rules (`---`) to mark meaningful transitions in the
+direction of a lesson.
+
+Do not place them mechanically before every section. Closely related sections
+that are part of the same experiment or line of investigation should generally
+remain together without a horizontal rule.
+
 ## Evolving This Guide
 
 This document should record conventions that have actually become useful to the course.
