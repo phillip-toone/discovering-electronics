@@ -14,14 +14,21 @@ But imagine doing it a hundred times.
 
 There must be a better way.
 
-## Can We Make This More Convenient?
+## What You'll Need
 
-For this experiment, you'll need:
+From previous lessons:
 
-* the 12 V DC source from Lesson 1
-* the 12 V lamp
+* 12 V DC power source
+* 12 V lamp
 * wire
-* a simple two-terminal switch
+* multimeter
+
+New for this lesson:
+
+* **SPST toggle switches (2x)**
+* **momentary pushbutton**
+
+## Can We Make This More Convenient?
 
 Don't connect anything just yet.
 
@@ -47,11 +54,55 @@ Flip the switch back and forth.
 
 What is the switch actually doing?
 
+## What's Happening Inside the Switch?
+
+Flip the switch back and forth a few times.
+
+You can see what happens to the lamp, but what is the switch actually doing?
+
+We could take the switch apart and look inside, but your multimeter gives us another way to investigate it.
+
+First, **disconnect the power source from the circuit**.
+
+We're going to use a feature of the multimeter called a **continuity test**. Continuity testing should be performed on an unpowered circuit.
+
+Set your multimeter to continuity mode. The symbol used for continuity varies between meters, so check your meter's instructions if you're not sure which setting to use.
+
+Before testing the switch, touch the two meter probes together.
+
+What happens?
+
+Many multimeters will beep when the probes touch. Separate the probes and the beep stops.
+
+The meter is testing whether there is a continuous electrical path between its probes.
+
+Now disconnect the switch from the rest of the circuit and place one meter probe on each of its two terminals.
+
+Flip the switch to one position.
+
+Does the meter indicate continuity?
+
+Flip the switch to the other position.
+
+What changes?
+
+Try it several times.
+
+Based on what the meter tells you, what do you think is happening inside the switch?
+
+You should find that in one position the two terminals have continuity, there is an electrical path between them.
+
+In the other position, they do not.
+
+You have just used the multimeter to investigate something you couldn't directly see.
+
+Continuity testing will become a useful troubleshooting tool. When you're unsure whether two points are electrically connected, you now have a way to find out.
+    
 ## A Convenient Break in the Circuit
 
 When you disconnected a wire in Lesson 1, you created a break in the electrical path.
 
-The switch does the same thing.
+Your continuity test just showed you that the switch can do the same thing without disconnecting a wire.
 
 When the switch is **closed**, its contacts provide an electrical path through the switch. The circuit is complete and the lamp can illuminate.
 
@@ -101,7 +152,15 @@ Now try it.
 
 ![A switch located between the lamp and the negative side of the power source](figures/switch-after-lamp.svg)
 
+What happened?Now try it.
+
+![A switch located between the lamp and the negative side of the power source](figures/switch-after-lamp.svg)
+
 What happened?
+
+Notice that for this circuit, the switch can go on either side of the lamp. A switch between the positive side of the power source and the lamp is called **high-side switching**. A switch between the lamp and the negative side is called **low-side switching**.
+
+Either works here. Later, when we use transistors as switches, you'll see why the difference can matter.
 
 For this simple circuit, the switch can break the electrical path on either side of the lamp.
 
@@ -110,6 +169,8 @@ Opening the switch anywhere in this single path prevents current from flowing th
 Closing it restores the complete path.
 
 This is the same behavior you observed when you disconnected a wire in Lesson 1. We've changed *how* we create the break, but the circuit still follows the same rules.
+
+---
 
 ## Here's Another Switch
 
@@ -178,6 +239,8 @@ The lamp illuminates when:
 You have just built an **AND** function.
 
 Notice that we didn't need a special "AND component." We created the behavior simply by arranging two ordinary switches so that the electrical path has to pass through both of them.
+
+---
 
 ## Can Either Switch Turn It On?
 
@@ -317,7 +380,7 @@ That's an interesting problem.
 
 We'll come back to it.
 
-## A Different Kind of Button
+## A Different Kind of "Switch" (Button)
 
 Before moving on, let's look at one more simple way to make and break a circuit.
 
