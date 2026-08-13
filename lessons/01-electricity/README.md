@@ -289,6 +289,40 @@ Instead of worrying about memorizing the equation, remember the rectangle. Volta
 
 ---
 
+### Watts and Horsepower
+
+You may already be familiar with another unit of power: **horsepower**.
+
+Watts and horsepower measure the same thing—**power**—using different units.
+
+One horsepower is approximately:
+
+**1 horsepower = 746 watts**
+
+You've already calculated the electrical power used by your lamp. Let's see what that looks like in horsepower.
+
+To convert watts to horsepower, divide the power in watts by 746:
+
+**Horsepower = Watts ÷ 746**
+
+Use the power you calculated for your lamp:
+
+**Lamp power: __________ W**
+
+Now convert it to horsepower:
+
+**__________ W ÷ 746 = __________ hp**
+
+That's probably not a very impressive number of horsepower!
+
+But think about what you've just done. The power of the little lamp sitting in front of you can be expressed using the same unit of measurement used to describe the power of an engine.
+
+A watt isn't just an "electrical" unit of power. **Power is power.** We can use different units to describe it depending on what we're working with.
+
+Later, when we start experimenting with electric motors, we'll come back to this idea—and discover that there's an important difference between the electrical power we put into a motor and the mechanical power we get out.
+
+---
+
 ## One Last Experiment
 
 Before moving on, play with the circuit.
