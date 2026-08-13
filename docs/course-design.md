@@ -151,22 +151,27 @@ Each lesson should contain a **What You'll Need** section near the beginning.
 
 The list should contain everything required to complete that lesson, not every component the student has accumulated during the course.
 
-Quantities should be included where meaningful.
+A quantity of one is assumed unless otherwise specified. When more than one
+identical item is required, place the quantity in parentheses after the item
+description using `(Nx)`, such as `SPST toggle switches (2x)`.
+
+For materials without a meaningful count, describe the amount in ordinary
+language when useful, such as `wire, as needed`.
 
 In the first few lessons, previously introduced and newly introduced equipment may be listed separately:
 
 ```text
 From previous lessons:
 
-* 1 12 V DC power source
-* 1 12 V lamp
+* 12 V DC power source
+* 12 V lamp
 * wire
-* 1 multimeter
+* multimeter
 
 New for this lesson:
 
-* **2 SPST toggle switches**
-* **1 momentary pushbutton**
+* **SPST toggle switches (2x)**
+* **momentary pushbutton**
 ```
 
 The explicit grouping helps teach the student how to interpret the course's equipment lists.
@@ -174,12 +179,12 @@ The explicit grouping helps teach the student how to interpret the course's equi
 Once the convention has become familiar, the lists may be combined:
 
 ```text
-* 1 12 V DC power source
-* 1 12 V lamp
+* 12 V DC power source
+* 12 V lamp
 * wire
-* 1 multimeter
-* **2 SPST toggle switches**
-* **1 momentary pushbutton**
+* multimeter
+* **SPST toggle switches (2x)**
+* **momentary pushbutton**
 ```
 
 **Bold indicates a type of component being introduced for the first time in the course.**
