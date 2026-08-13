@@ -10,13 +10,16 @@ We could start with electrons, atoms, electric fields, voltage, current, resista
 
 ---
 
-## Your First Circuit
+---
 
-For this experiment you will need:
+## What You'll Need
+
+To complete this lesson, you'll need:
 
 * a 12 V DC power source
 * a 12 V lamp
 * wire
+* a multimeter
 
 > **Why 12 volts?**
 >
@@ -27,6 +30,8 @@ For this experiment you will need:
 > So when we call something a **12 V system**, think of 12 V as its name or nominal operating voltage rather than an exact measurement you should always expect to see.
 >
 > Don't worry if you're not interested in cars. The electrical principles we'll discover apply just as well to electronics that operate at other voltages. We'll encounter plenty of those as we continue.
+
+## Your First Circuit
 
 Connect the components as shown in the schematic below.
 
@@ -134,7 +139,7 @@ That's an important distinction, and we're going to investigate it rather than j
 
 ## Let's Measure It (Voltage)
 
-Get your digital multimeter.
+Get your multimeter.
 
 Set it to measure **DC voltage**.
 
