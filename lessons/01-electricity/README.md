@@ -148,6 +148,8 @@ Record your measurement:
 
 Now disconnect one of the wires so that the circuit is open.
 
+![A voltmeter measuring voltage across the two disconnected ends of an open circuit](figures/measure-voltage-disconnect.svg)
+
 Measure the voltage across the lamp again.
 
 **Lamp voltage, circuit open: __________ V**
