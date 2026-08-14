@@ -1,0 +1,29 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}
+
+\coordinate (positive) at (0,2);
+\coordinate (negative) at (0,0);
+
+\draw
+    (positive)
+    to[V, l_=12 V] (negative);
+
+\draw
+    (positive)
+    to[closing switch, l=S2] (2,2)
+    to[lamp, l=Lamp] (2,0)
+    -- (negative);
+
+\draw
+    (0,2)
+    -- (0,3)
+    to[closing switch, l=S1] (2,3)
+    -- (2,2);
+
+\end{circuitikz}
+
+\end{document}

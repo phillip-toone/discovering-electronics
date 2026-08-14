@@ -46,7 +46,7 @@ If the lamp doesn't behave as you expected, investigate. Try another connection.
 
 Once you have the lamp turning on and off with the switch, compare your circuit with this one:
 
-![A switch connected in series with a 12 V lamp and power source](figures/lamp-with-switch.svg)
+![A switch connected in series with a 12 V lamp and power source](figures/high-side-switch.svg)
 
 *Using a switch to make and break the circuit.*
 
@@ -136,7 +136,7 @@ Does the same idea apply to a switch?
 
 Right now your circuit probably looks something like this:
 
-![A switch located between the positive side of the power source and the lamp](figures/switch-before-lamp.svg)
+![A switch located between the positive side of the power source and the lamp](figures/high-side-switch.svg)
 
 Before changing anything, make a prediction.
 
@@ -150,11 +150,7 @@ Will something else happen?
 
 Now try it.
 
-![A switch located between the lamp and the negative side of the power source](figures/switch-after-lamp.svg)
-
-What happened?Now try it.
-
-![A switch located between the lamp and the negative side of the power source](figures/switch-after-lamp.svg)
+![A switch located between the lamp and the negative side of the power source](figures/low-side-switch.svg)
 
 What happened?
 
@@ -194,19 +190,19 @@ Once you think you have it working, try every possible combination of switch pos
 
 What happens when:
 
-* both switches are open?
-* the first is closed and the second is open?
-* the first is open and the second is closed?
-* both are closed?
+* S1 and S2 are both open?
+* S1 is open and S2 is closed?
+* S1 is closed and S2 is open?
+* S1 and S2 are both closed?
 
 Record what you observe.
 
-| Switch A | Switch B | Lamp |
-| -------- | -------- | ---- |
-| Open     | Open     |      |
-| Open     | Closed   |      |
-| Closed   | Open     |      |
-| Closed   | Closed   |      |
+| S1     | S2     | Lamp |
+| ------ | ------ | ---- |
+| Open   | Open   |      |
+| Open   | Closed |      |
+| Closed | Open   |      |
+| Closed | Closed |      |
 
 If your lamp behaves differently than you expected, don't immediately rewire it.
 
@@ -218,31 +214,57 @@ Can you make it all the way through both switches and the lamp to the other term
 
 Where is the path broken?
 
-## Both Switches Must Be Closed
+## Both Switches Must Be Closed (AND)
 
 One way to solve the challenge looks like this:
 
-![Two SPST switches connected in series so both must be closed to illuminate the lamp](figures/two-switches-both.svg)
+![Two SPST switches connected in series so both must be closed to illuminate the lamp](figures/high-side-AND-switches.svg)
 
 Try the four switch combinations again.
 
 There is only one combination that illuminates the lamp:
 
-**Switch A must be closed AND Switch B must be closed.**
+**S1 must be closed AND S2 must be closed.**
 
 That word—**AND**—is useful.
 
 The lamp illuminates when:
 
-**A AND B are closed.**
+**S1 AND S2 are closed.**
 
 You have just built an **AND** function.
 
 Notice that we didn't need a special "AND component." We created the behavior simply by arranging two ordinary switches so that the electrical path has to pass through both of them.
 
+But is this the only way to arrange the switches?
+
+Right now, both switches are on the **high side** of the lamp.
+
+What do you think will happen if you move both switches to the **low side**?
+
+**Make a prediction before you try it.**
+
+Move both switches to the low side and test all four switch combinations again.
+
+Does the AND behavior change?
+
+Now try one more arrangement.
+
+Put one switch on the high side and the other on the low side.
+
+Before testing it, make another prediction.
+
+Try all four switch combinations.
+
+What happened?
+
+In all three arrangements, there is still only one complete path through the lamp, and both switches are part of that path. Opening either switch breaks the circuit.
+
+**AND describes the behavior of the circuit, not where the switches are located.**
+
 ---
 
-## Can Either Switch Turn It On?
+## Can Either Switch Turn It On? (OR)
 
 Now let's change the problem.
 
@@ -250,8 +272,8 @@ Can you wire the same two switches so that the lamp will illuminate if **either*
 
 In other words, can you make this happen?
 
-* close Switch A → lamp on
-* close Switch B → lamp on
+* close S1 → lamp on
+* close S2 → lamp on
 * close both → lamp on
 * open both → lamp off
 
@@ -269,30 +291,66 @@ Experiment.
 
 When you think you've solved it, test all four combinations again.
 
-| Switch A | Switch B | Lamp |
-| -------- | -------- | ---- |
-| Open     | Open     |      |
-| Open     | Closed   |      |
-| Closed   | Open     |      |
-| Closed   | Closed   |      |
+| S1     | S2     | Lamp |
+| ------ | ------ | ---- |
+| Open   | Open   |      |
+| Open   | Closed |      |
+| Closed | Open   |      |
+| Closed | Closed |      |
 
 Only after you've tried it yourself, compare your circuit with this one:
 
-![Two SPST switches providing parallel paths so either switch can illuminate the lamp](figures/two-switches-either.svg)
+![Two SPST switches providing parallel paths so either switch can illuminate the lamp](figures/high-side-OR-switches.svg)
 
 Trace the paths through this circuit.
 
-If Switch A is open, can you still find a complete path through Switch B?
+If S1 is open, can you still find a complete path through S2?
 
-If Switch B is open, can you still find a complete path through Switch A?
+If S2 is open, can you still find a complete path through S1?
 
 What if both are open?
 
 What if both are closed?
 
-The lamp illuminates when Switch A **OR** Switch B is closed.
+The lamp illuminates when S1 **OR** S2 is closed.
 
 You have built an **OR** function.
+
+But is this the only way to arrange an OR circuit?
+
+Right now, both switches provide paths on the high side of the lamp.
+
+Can you move both switches to the **low side** and keep the same OR behavior?
+
+**Make a prediction. Then try it.**
+
+Test all four switch combinations again.
+
+Does the OR behavior change?
+
+Now consider something different.
+
+With AND, you were able to put S1 on the high side and S2 on the low side without changing the AND behavior.
+
+**Can you do the same thing with OR?**
+
+Don't change the circuit yet.
+
+Trace the possible paths and make a prediction first.
+
+Then experiment.
+
+Can you arrange one switch on each side of the lamp so that closing **either** switch by itself illuminates the lamp?
+
+Why or why not?
+
+For OR to work, each switch must provide an alternative way to complete the same part of the circuit.
+
+Both switches can provide those alternative paths on the high side, or both can provide them on the low side.
+
+Putting one switch on each side doesn't give us two alternative paths. Instead, both switches become part of the same complete path—and both must be closed.
+
+**OR requires alternative paths. AND requires a path through both conditions.**
 
 ## You Just Built Logic
 
@@ -302,11 +360,11 @@ You started with two ordinary mechanical switches and a lamp.
 
 Then you connected them one way so that:
 
-**A AND B** must be closed.
+**S1 AND S1** must be closed.
 
 You connected the exact same components another way so that:
 
-**A OR B** may be closed.
+**S1 OR S2** may be closed.
 
 These are two of the fundamental operations used by digital computers.
 
@@ -328,11 +386,11 @@ Create a rule first.
 
 For example:
 
-> The lamp should illuminate only when A AND B AND C are closed.
+> The lamp should illuminate only when S1 AND S2 AND S3 are closed.
 
 Or:
 
-> The lamp should illuminate when A OR B OR C is closed.
+> The lamp should illuminate when S1 OR S2 OR S3 is closed.
 
 Those are straightforward extensions of what you've already built.
 
@@ -340,7 +398,7 @@ Can you make something more interesting?
 
 For example:
 
-> The lamp should illuminate when A is closed AND either B OR C is closed.
+> The lamp should illuminate when S1 is closed AND either S2 OR S3 is closed.
 
 Don't worry about writing this as a mathematical expression or learning special symbols.
 
@@ -364,13 +422,13 @@ You may discover a limitation.
 
 Suppose the correct combination is supposed to be:
 
-* Switch A closed
-* Switch B open
-* Switch C closed
+* S1 closed
+* S2 open
+* S3 closed
 
-Making the lamp require A and C to be closed is something you already know how to do.
+Making the lamp require S1 and S3 to be closed is something you already know how to do.
 
-But how can you make the circuit require B to be **open**?
+But how can you make the circuit require S2 to be **open**?
 
 With the simple switches we've been using, an open switch breaks a path.
 
@@ -380,7 +438,7 @@ That's an interesting problem.
 
 We'll come back to it.
 
-## A Different Kind of "Switch" (Button)
+## A Different Kind of Switch
 
 Before moving on, let's look at one more simple way to make and break a circuit.
 
@@ -411,6 +469,14 @@ What about a machine that should operate only while someone is holding a button?
 Neither switch is automatically "better."
 
 They are useful for different jobs.
+
+Just as the toggle switch has a schematic symbol, so does the momentary pushbutton:
+
+![The schematic symbol for a normally open momentary pushbutton](figures/momentary-pushbutton.svg)
+
+When you're not pressing the button, its contacts are open. This is called a normally open pushbutton.
+
+Pressing it closes the contacts. Release it, and it returns to its normal open state.
 
 ## Look Back at What You've Discovered
 
