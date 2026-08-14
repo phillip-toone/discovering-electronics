@@ -25,7 +25,7 @@ From previous lessons:
 
 New for this lesson:
 
-* **SPST toggle switches (2x)**
+* **SPST toggle switches (3x)**
 * **momentary pushbutton**
 
 ## Can We Make This More Convenient?
@@ -236,6 +236,10 @@ You have just built an **AND** function.
 
 Notice that we didn't need a special "AND component." We created the behavior simply by arranging two ordinary switches so that the electrical path has to pass through both of them.
 
+When components are connected one after another along the same electrical path, we say they are connected **in series**.
+
+S1 and S2 are in series with each other.
+
 But is this the only way to arrange the switches?
 
 Right now, both switches are on the **high side** of the lamp.
@@ -316,6 +320,8 @@ The lamp illuminates when S1 **OR** S2 is closed.
 
 You have built an **OR** function.
 
+S1 and S2 provide separate paths between the same two points in the circuit. Components connected this way are said to be in **parallel**.
+
 But is this the only way to arrange an OR circuit?
 
 Right now, both switches provide paths on the high side of the lamp.
@@ -349,6 +355,8 @@ For OR to work, each switch must provide an alternative way to complete the same
 Both switches can provide those alternative paths on the high side, or both can provide them on the low side.
 
 Putting one switch on each side doesn't give us two alternative paths. Instead, both switches become part of the same complete path—and both must be closed.
+
+**Series and parallel describe how components are electrically connected, not where they appear on the page.**
 
 **OR requires alternative paths. AND requires a path through both conditions.**
 
@@ -491,7 +499,9 @@ You have discovered that:
 * a closed switch provides a path for current
 * a switch can be placed at different points in this simple circuit and still control the lamp
 * two switches can be arranged so both must be closed
+* components connected one after another along the same electrical path are **in series**
 * two switches can be arranged so either may be closed
+* components that provide separate paths between the same two points are **in parallel**
 * those behaviors can be described as **AND** and **OR**
 * the same electrical components can behave differently depending on how they are connected
 * different mechanical switches can provide different kinds of control
