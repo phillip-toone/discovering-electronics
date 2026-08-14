@@ -151,12 +151,9 @@ Each lesson should contain a **What You'll Need** section near the beginning.
 
 The list should contain everything required to complete that lesson, not every component the student has accumulated during the course.
 
-A quantity of one is assumed unless otherwise specified. When more than one
-identical item is required, place the quantity in parentheses after the item
-description using `(Nx)`, such as `SPST toggle switches (2x)`.
+A quantity of one is assumed unless otherwise specified. When more than one identical item is required, place the quantity in parentheses after the item description using `(Nx)`, such as `SPST toggle switches (2x)`.
 
-For materials without a meaningful count, describe the amount in ordinary
-language when useful, such as `wire, as needed`.
+For materials without a meaningful count, describe the amount in ordinary language when useful, such as `wire, as needed`.
 
 In the first few lessons, previously introduced and newly introduced equipment may be listed separately:
 
@@ -246,6 +243,18 @@ Alt text and captions therefore have related but different jobs:
 
 Figures are not manually numbered unless a future need makes numbering useful.
 
+### Reference Designators
+
+Use conventional schematic reference designators when they help identify components without unnecessarily complicating the student's first encounter with a circuit.
+
+Introduce reference designators when there is a reason to distinguish between multiple components of the same type. For example, two switches may be labeled **S1** and **S2** rather than "Switch A" and "Switch B."
+
+For manually operated switches, use **S1**, **S2**, **S3**, and so on.
+
+Once introduced, use the same reference designators consistently in schematics, lesson text, tables, and questions.
+
+Introduce additional reference designators as the corresponding components appear in the course rather than teaching a list of designators in advance.
+
 ## Writing Voice
 
 The course should sound:
@@ -281,9 +290,7 @@ The goal is to make it **discoverable**.
 Use Markdown horizontal rules (`---`) to mark meaningful transitions in the
 direction of a lesson.
 
-Do not place them mechanically before every section. Closely related sections
-that are part of the same experiment or line of investigation should generally
-remain together without a horizontal rule.
+Do not place them mechanically before every section. Closely related sections that are part of the same experiment or line of investigation should generally remain together without a horizontal rule.
 
 ## Evolving This Guide
 
