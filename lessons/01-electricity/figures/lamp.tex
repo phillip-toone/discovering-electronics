@@ -5,16 +5,19 @@
 
 \begin{circuitikz}
 
+\coordinate (positive) at (0,2);
+\coordinate (negative) at (0,0);
+
 \draw
-    (0,0)
-    to[battery1, l=$V_{\mathrm{DC}}$] (0,2)
+    (positive)
+    to[V, l_=12 V] (negative);
+
+\draw
+    (positive)
     -- (2,2)
-    to[lamp, l=$LP_1$] (2,0)
-    -- (0,0);
-
-\node[left] at (0,2) {$+$};
-\node[left] at (0,0) {$-$};
-
+    to[lamp, l=Lamp] (2,0)
+    -- (negative);
+    
 \end{circuitikz}
 
 \end{document}

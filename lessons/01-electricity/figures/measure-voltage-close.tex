@@ -5,24 +5,25 @@
 
 \begin{circuitikz}
 
-% Main circuit
-\draw
-    (0,0)
-    to[battery1, l=$V_{\mathrm{DC}}$] (0,2)
-    -- (2,2)
-    to[lamp, l=$LP_1$] (2,0)
-    -- (0,0);
+\coordinate (positive) at (0,2);
+\coordinate (negative) at (0,0);
 
-% Voltmeter connected across the lamp
 \draw
-    (0,2)
+    (positive)
+    to[V, l_=12 V] (negative);
+
+\draw
+    (positive)
+    -- (2,2)
+    to[lamp, l=Lamp] (2,0)
+    -- (negative);
+
+\draw
+    (positive)
     -- (0,3)
     to[voltmeter] (2,3)
     -- (2,2);
-
-\node[left] at (0,2) {$+$};
-\node[left] at (0,0) {$-$};
-
+    
 \end{circuitikz}
 
 \end{document}
