@@ -1,0 +1,41 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}
+
+  % Terminal locations
+  \coordinate (COM) at (0,0);
+  \coordinate (NC)  at (2,0.6);
+  \coordinate (NO)  at (2,-0.6);
+
+  % Terminal leads
+  \draw (-1,0) -- (COM);
+  \draw (NC) -- (3,0.6);
+  \draw (NO) -- (3,-0.6);
+
+  % Contact terminals
+  \draw (COM) node[ocirc] {};
+  \draw (NC)  node[ocirc] {};
+  \draw (NO)  node[ocirc] {};
+
+  % Movable contact, shown in the normal (released) position.
+  \draw (COM) -- (NC);
+
+  % Pushbutton actuator.
+  % The vertical stem represents the mechanical pushbutton action.
+  \draw (1,0.3) -- (1,1.25);
+  \draw (0.65,1.25) -- (1.35,1.25);
+
+  % Downward arrow indicates that the button is pressed downward.
+  \draw[->] (1,1.9) -- (1,1.4);
+
+  % Terminal labels
+  \node[left]  at (-1,0)   {COM};
+  \node[right] at (3,0.6)  {NC};
+  \node[right] at (3,-0.6) {NO};
+
+\end{circuitikz}
+
+\end{document}

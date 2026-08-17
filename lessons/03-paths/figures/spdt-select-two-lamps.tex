@@ -1,0 +1,40 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+\begin{circuitikz}
+  % SPDT switch
+  \draw (0,2) node[spdt, anchor=in] (sw1) {};
+
+  % Common top and bottom levels for the three components
+  \coordinate (componentTop) at (0,1.7);
+  \coordinate (componentBottom) at (0,0);
+
+  % Power supply
+  \draw (componentTop)
+    to[V, l_=12 V] (componentBottom);
+
+  % Connect power supply to switch common
+  \draw (componentTop) -- (sw1.in);
+
+  % LP1
+  \draw (sw1.out 2)
+    -- ++(1,0)
+    coordinate (LP1route)
+    -- (LP1route |- componentTop)
+    coordinate (LP1top)
+    to[lamp, l=LP1] (LP1top |- componentBottom);
+
+  % LP2
+  \draw (sw1.out 1)
+    -- ++(3,0)
+    coordinate (LP2route)
+    -- (LP2route |- componentTop)
+    coordinate (LP2top)
+    to[lamp, l=LP2] (LP2top |- componentBottom);
+
+  % Common return
+  \draw (componentBottom) -- (LP2top |- componentBottom);
+
+\end{circuitikz}
+\end{document}

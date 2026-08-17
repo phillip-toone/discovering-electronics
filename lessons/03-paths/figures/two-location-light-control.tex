@@ -1,0 +1,34 @@
+\documentclass[border=8pt]{standalone}
+\usepackage[american]{circuitikz}
+
+\begin{document}
+
+\begin{circuitikz}[]
+
+  % 12 V DC source on the left
+  \draw (0,2) to[V, l_=12 V] (0,0);
+
+  % Wire from the top of the source to S1's common terminal
+  \draw (0,2) -- (1,2);
+  \draw (1,2) node[spdt, anchor=in] (sw1) {};
+
+  % Travelers: the two wires connecting S1's throws to S2's throws
+  \draw (sw1.out 1) -- ++(1,0) coordinate (Tup);
+  \draw (sw1.out 2) -- ++(1,0) coordinate (Tdown);
+
+  % S2, mirrored so its common terminal faces right, toward the lamp
+  \draw (4,2) node[spdt, anchor=in, xscale=-1] (sw2) {};
+
+  % Wire from S2's common terminal to the lamp
+  \draw (sw2.in) -- ++(1,0) to[lamp, l=LP1] ++(0,-2) coordinate (LPbottom);
+
+  % Return rail back to the negative side of the source
+  \draw (LPbottom) -| (0,0);
+
+  % Labels
+  \node[below left] at (sw1.in) {S1};
+  \node[below right] at (sw2.in) {S2};
+
+\end{circuitikz}
+
+\end{document}
