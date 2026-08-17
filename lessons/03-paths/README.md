@@ -26,7 +26,6 @@ From previous lessons:
 * 12 V lamp
 * wire, as needed
 * multimeter
-* SPST toggle switches
 
 Additional equipment for this lesson:
 
@@ -180,7 +179,7 @@ Move the lever.
 
 What changes?
 
-At either stable position, one possible connection is closed while the other is open.
+In either stable position, one possible connection is closed while the other is open.
 
 So asking whether the entire SPDT switch is "open" or "closed" doesn't tell us enough.
 
@@ -366,6 +365,24 @@ Is there a pattern?
 What matters more: whether a particular switch is in position A or B, or how the positions of the **two switches compare with each other**?
 
 Keep that observation in mind. We'll encounter behaviors like this again later.
+
+### Try Moving Things Around
+
+In the circuit above, S1 and S2 are both on the high side of LP1.
+
+You've seen before that a switch doesn't necessarily have to be on the high side of a load to control it.
+
+**Could this entire two-switch arrangement be moved to the low side of LP1 and still work the same way?**
+
+Make a prediction before you try it.
+
+If you get that working, consider a harder question:
+
+**Do S1 and S2 have to be together on the same side of LP1? Could LP1 be placed somewhere between them while preserving the same two-location behavior?**
+
+Draw what you think might work, then try it.
+
+As always, if the circuit doesn't behave as you expected, trace the possible paths from one side of the power source to the other. What changed?
 
 ---
 
