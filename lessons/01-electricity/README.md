@@ -10,8 +10,6 @@ We could start with electrons, atoms, electric fields, voltage, current, resista
 
 ---
 
----
-
 ## What You'll Need
 
 To complete this lesson, you'll need:
@@ -20,6 +18,7 @@ To complete this lesson, you'll need:
 * a 12 V lamp
 * wire
 * a multimeter
+* A printed copy of this lesson or a notebook for notes and measurements
 
 > **Why 12 volts?**
 >
@@ -30,6 +29,14 @@ To complete this lesson, you'll need:
 > So when we call something a **12 V system**, think of 12 V as its name or nominal operating voltage rather than an exact measurement you should always expect to see.
 >
 > Don't worry if you're not interested in cars. The electrical principles we'll discover apply just as well to electronics that operate at other voltages. We'll encounter plenty of those as we continue.
+
+### Working Through the Lessons
+
+These lessons are meant to be worked through, not just read.
+
+If possible, print each lesson so you can record measurements, make predictions, and draw directly on the pages as you experiment. If you prefer not to print them, keep a notebook nearby instead.
+
+Don't worry about keeping everything neat. These pages are a place to think.
 
 ## Your First Circuit
 

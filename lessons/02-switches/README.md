@@ -418,34 +418,6 @@ If it doesn't behave the way you intended, trace the possible electrical paths a
 
 Then invent another rule.
 
-### A Combination Challenge
-
-Imagine the switches are part of a simple lock.
-
-Your goal is to make the lamp illuminate only for a particular arrangement of switches.
-
-Can you build one?
-
-You may discover a limitation.
-
-Suppose the correct combination is supposed to be:
-
-* S1 closed
-* S2 open
-* S3 closed
-
-Making the lamp require S1 and S3 to be closed is something you already know how to do.
-
-But how can you make the circuit require S2 to be **open**?
-
-With the simple switches we've been using, an open switch breaks a path.
-
-How could an open switch become part of the condition that makes something happen?
-
-That's an interesting problem.
-
-We'll come back to it.
-
 ## A Different Kind of Switch
 
 Before moving on, let's look at one more simple way to make and break a circuit.
@@ -485,6 +457,28 @@ Just as the toggle switch has a schematic symbol, so does the momentary pushbutt
 When you're not pressing the button, its contacts are open. This is called a normally open pushbutton.
 
 Pressing it closes the contacts. Release it, and it returns to its normal open state.
+
+### One More Challenge
+
+You've connected the pushbutton so that pressing it turns the lamp on.
+
+Now try the opposite.
+
+**Can you make the lamp illuminate when the button is NOT pressed?**
+
+You can rearrange the circuit any way you like, but use the same pushbutton.
+
+Give it a try.
+
+If you can't find a way to make it work, think about what the pushbutton is actually doing.
+
+When you press it, its contacts close.
+
+When you release it, its contacts open.
+
+**Can this switch do what we're asking it to do?**
+
+Keep that problem in mind.
 
 ## Look Back at What You've Discovered
 

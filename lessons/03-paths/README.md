@@ -348,15 +348,9 @@ The two wires that provide the alternative paths between the switches are often 
 
 This arrangement is commonly used to control a light from two locations.
 
-Depending on where you live and the terminology used there, you may hear this called **three-way switching**.
+In North American building wiring, this arrangement is commonly called **three-way switching**, and the SPDT switches themselves are called **three-way switches**.
 
-The name can be confusing at first: there are two physical switches, not three.
-
-What's important here isn't the name.
-
-It's what the circuit does.
-
-Either switch can change whether a complete electrical path exists.
+The name can be confusing: there are only two switches, and each has only two positions. Don't let the name distract you from what the circuit actually does.
 
 Look again at the table you completed.
 
